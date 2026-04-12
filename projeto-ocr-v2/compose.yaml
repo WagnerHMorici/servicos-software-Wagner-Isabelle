@@ -1,0 +1,34 @@
+services:
+  gradio-visao:
+    image: wagner/gradio-visao
+    build:
+      context: gradio-visao
+      dockerfile: Dockerfile
+    ports:
+      - "7861:7861"
+    depends_on:
+      - api-visao
+    restart: always
+
+  api-visao:
+    image: wagner/api-visao:v1.0
+    build:
+      context: api-visao
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - api-armazenamento
+
+  api-armazenamento:
+    image: wagner/api-armazenamento:v1.0
+    build:
+      context: api-armazenamento
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    volumes:
+      - dados-imagens:/dados
+
+volumes:
+  dados-imagens:

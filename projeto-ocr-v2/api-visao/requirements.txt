@@ -1,7 +1,5 @@
 fastapi
-pydantic
 uvicorn
+easyocr
+requests
 python-multipart
-openai-whisper
-
-

@@ -1,5 +1,3 @@
 fastapi
-pydantic
 uvicorn
 python-multipart
-openai-whisper
