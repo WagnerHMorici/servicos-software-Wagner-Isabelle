@@ -53,11 +53,5 @@ Acesse: http://localhost:7861
 - Funciona 100% offline após o primeiro build.
 - O histórico fica em memória durante a sessão; as imagens são persistidas no volume Docker dados-imagens.
 
-## Descrição para entrega
 
-O usuário faz upload de uma imagem pelo frontend Gradio, escolhendo entre modo
-impresso ou manuscrito. O frontend envia o arquivo via REST para a api-visao,
-que executa OCR localmente com EasyOCR (suporte a português e inglês), retornando
-o texto extraído e a confiança da predição. O resultado é salvo pela api-armazenamento,
-que persiste o arquivo em disco e mantém histórico consultável pela interface.
-O texto extraído pode ser baixado como .txt diretamente pela interface.
+
