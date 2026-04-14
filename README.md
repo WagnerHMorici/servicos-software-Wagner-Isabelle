@@ -28,26 +28,6 @@ um histórico consultável pela interface.
     |-- GET /historico --> [api-armazenamento :8082]
 ```
 
-## Estrutura
-
-```
-projeto/
-├── compose.yaml
-├── README.md
-├── gradio-visao/               # Frontend (Gradio)
-│   ├── app.py
-│   ├── requirements.txt
-│   └── Dockerfile
-├── api-visao/                  # Backend OCR (EasyOCR + FastAPI)
-│   ├── main.py
-│   ├── requirements.txt
-│   └── Dockerfile
-└── api-armazenamento/          # Backend de persistência (FastAPI)
-    ├── main.py
-    ├── requirements.txt
-    └── Dockerfile
-```
-
 ## Funcionalidades
 
 - Upload de imagens (PNG, JPG) pela interface
