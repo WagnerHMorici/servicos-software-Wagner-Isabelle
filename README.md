@@ -55,3 +55,26 @@ Acesse: http://localhost:7861
 
 
 
+## APIs desenvolvidas
+
+### api-visao (porta 8081)
+
+Responsável pelo processamento das imagens e execução do OCR.
+
+| Método | Rota       | Descrição                                                                 |
+|--------|------------|---------------------------------------------------------------------------|
+| GET    | /status    | Retorna o status do serviço e o modelo carregado                          |
+| POST   | /analisar  | Recebe uma imagem, executa o OCR e retorna o texto extraído e a confiança |
+
+### api-armazenamento (porta 8082)
+
+Responsável pela persistência das imagens processadas e manutenção do histórico.
+
+| Método | Rota        | Descrição                                                        |
+|--------|-------------|------------------------------------------------------------------|
+| GET    | /status     | Retorna o status do serviço e o total de registros armazenados   |
+| POST   | /salvar     | Recebe a imagem e o texto extraído e persiste em disco           |
+| GET    | /historico  | Retorna a lista de todas as análises realizadas na sessão        |
+
+---
+
