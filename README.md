@@ -1,5 +1,11 @@
 # OCR com IA Local — Projeto Final Serviços de Software 2026/1
 
+
+Nome: Isabelle Casareggio Minjoni
+RA: 25.80044-2
+Nome: Wagner Henrique Morici
+RA: 25.80043-4
+
 ## Funcionalidade
 
 O usuário faz upload de uma imagem contendo texto pelo frontend Gradio.
